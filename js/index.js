@@ -23,6 +23,7 @@ var app = {
     onSuccess: function(position){
         var longitude = position.coords.longitude;
         var latitude = position.coords.latitude;
+		alert (longitude);
         var latLong = new google.maps.LatLng(latitude, longitude);
 
         var mapOptions = {
