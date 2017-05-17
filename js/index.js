@@ -1,8 +1,7 @@
- $(document).ready(function(e) {
 
-app.initialize();
 
- });
+
+
  
 var app = {
     // Application Constructor
@@ -52,3 +51,5 @@ var app = {
     },
 };
 
+
+app.initialize();
