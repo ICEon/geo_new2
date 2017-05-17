@@ -1,3 +1,9 @@
+ $(document).ready(function(e) {
+
+app.initialize();
+
+ });
+ 
 var app = {
     // Application Constructor
     initialize: function() {
@@ -23,9 +29,9 @@ var app = {
     onSuccess: function(position){
         var longitude = position.coords.longitude;
         var latitude = position.coords.latitude;
-		alert (longitude);
+		
         var latLong = new google.maps.LatLng(latitude, longitude);
-
+		alert (longitude);
         var mapOptions = {
             center: latLong,
             zoom: 13,
@@ -37,7 +43,7 @@ var app = {
         var marker = new google.maps.Marker({
               position: latLong,
               map: map,
-              title: 'my location'
+              title: 'on toy'
           });
     },
     
@@ -46,4 +52,3 @@ var app = {
     },
 };
 
-app.initialize();
