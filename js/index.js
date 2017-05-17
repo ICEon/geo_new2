@@ -52,4 +52,3 @@ var app = {
 };
 
 
-app.initialize();
