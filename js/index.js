@@ -45,6 +45,7 @@ var app = {
               map: map,
               title: 'on toy'
           });
+		  alert ("fuera");
     },
     
     onError: function(error){
